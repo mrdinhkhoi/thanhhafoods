@@ -1,0 +1,59 @@
+/**
+* 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+@import url("../harveststore/responsive.css");
+
+@media only screen and (max-width: 979px){
+	.header_cart.headercart-block{position:static;}
+	.navigation-menu .navbar{margin:0;}
+	.mega-menu li:hover > a,.mega-menu .current_page_item > a{color:#009bcc;}
+	.toggled-on .mega-menu .mega{
+		background-color: #006685;
+		border-top: 2px solid #e4d912;
+		z-index:9999;	
+	}
+	.mega-menu .expandable-hitarea:before,.mega-menu .collapsable-hitarea:after{color:#ffffff;}
+	.mega-menu ul li a{color:#ffffff;}
+	.mega-menu ul li a:hover, .mega-menu li:hover > a, .mega-menu .current_page_item > a{color:#e4d912;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	.main-navigation { width: 410px;}
+	.blog-posts-content .style-2 .post-content-inner{width:67%;}
+}
+@media only screen and (max-width: 767px){
+	.navigation-menu{position:relative;margin: 66px 0 0;}
+	.main-navigation{display:block;}
+	.header-main{text-align:center;}
+	.header_left{text-align:center;margin:0 0 20px;}
+	.header-search {   
+		left: 0;
+		position: absolute;
+		right: 0;
+		margin:0 auto;
+		top: -76px;
+		width: 288px;
+		padding:8px;
+	}
+	.topbar-main .header-menu-links li a:hover {color: #ffe400;}
+	.toplink-toggle:before,.header-menu-links li a{color:#ffffff;}
+	.header-menu-links li a:hover{color:#ffe400 ;}
+	.header-menu-links ul {background-color: #006685;border-color:#006685;}
+	.header_center, .header_right {display: inline-block;float: none;margin: 0;width: auto;}
+	.blog-posts-content .style-2 .post-content-inner{width:100%;}
+	.latest-blog .owl-theme .owl-controls .owl-buttons div{margin:0 3px;}
+}
+@media only screen and (max-width: 479px){		
+	.header-search {width: 230px;}	
+	.header-search input[type="text"], .header-search input[type="search"] {width: 187px;}
+	.topbar-contact{margin:10px 12px 0;}
+	.toplink-toggle:before {color: #ffffff;}	
+}
+@media only screen and (max-width: 319px){
+	.header-search{width: 193px;}
+	.header-search input[type="text"], .header-search input[type="search"]{width:150px;}	
+	.topbar-contact{margin:0;border:none;padding:0 0 0 58px;}
+	.header_center{margin:0 0 20px;width:100%;}
+	.header_cart .togg .widget.widget_shopping_cart{right:-75px;}
+}

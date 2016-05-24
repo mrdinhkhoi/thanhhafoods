@@ -1,0 +1,43 @@
+/*
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+@import url("../harveststore/rtl.css");
+
+
+/***************	Float Left		*********************/
+.header-main{text-align:left;}
+.header-search{float:left;}
+
+/***************	Float Right		*********************/
+
+.navigation-menu{text-align:right;}
+.cal-us,.contact-phone{float:right;}
+
+
+
+.topbar-contact {
+    background-position: right center;
+    border-left: 1px solid #80cde6;
+	border-right:none;
+    margin: 10px 30px 0;
+    padding: 0 58px 0 25px;   
+    width: auto;
+}
+.header-search .woocommerce-product-search input[type="submit"], .header-search .search-form #searchsubmit{margin:0 3px 0 0;}
+.header-search input[type="text"], .header-search input[type="search"]{float:right;}
+
+@media only screen and (max-width: 767px){
+	.header_left,.header-main{text-align:center;}
+	.header_center,.header_right{float:none;}
+}
+@media only screen and (max-width: 479px){	
+	.topbar-contact{margin:10px 0 0 12px; }
+}
+@media only screen and (max-width: 319px){
+	.topbar-contact{margin:0;border:none;padding:0 58px 0 0;}
+	.header_cart .togg .widget.widget_shopping_cart{  left: -74px; right: auto;}
+}
